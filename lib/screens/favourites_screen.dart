@@ -26,7 +26,10 @@ class _FavouritesScreenState extends State<FavouritesScreen> {
   Widget build(BuildContext context) {
     if (widget.favouriteMeals.isEmpty) {
       return Center(
-        child: Text('You have not added favourite meal yet. Add some!'),
+        child: Text(
+          'You have not added favourite meal yet. Add some!',
+          textAlign: TextAlign.center,
+        ),
       );
     } else {
       return ListView.builder(
